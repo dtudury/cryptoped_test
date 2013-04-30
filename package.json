@@ -1,0 +1,21 @@
+{
+    "name": "cryptoped",
+    "version": "0.0.0-4",
+    "description": "cryptoped test",
+    "main": "server.js",
+    "scripts": {
+        "start": "node server.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git@github.com:dtudury/cryptoped.git"
+    },
+    "dependencies": {
+        "cryptoped": "0.0.x",
+        "sha-lite": "0.1.1"
+    },
+    "engines": {
+        "node": "0.8.x"
+    },
+    "subdomain": "cryptoped"
+}

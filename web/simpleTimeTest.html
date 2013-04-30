@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="simpleTimeTest.js"></script>
+    <title>cryptoped test runner</title>
+</head>
+<body>
+
+<h1>cryptoped vs crypto.js, sha-lite, and openSSL</h1>
+
+<table>
+    <tr>
+        <th>npm:</th>
+        <td><a href="https://npmjs.org/package/cryptoped">https://npmjs.org/package/cryptoped</a></td>
+    </tr>
+    <tr>
+        <th>git:</th>
+        <td><a href="https://github.com/dtudury/cryptoped">git://github.com/dtudury/cryptoped.git</a></td>
+    </tr>
+</table>
+
+<ul id="browser_test">
+    <li>test run on server shows cryptoped takes %SERVER_TEST%x as long as openSSL (so... yeah, for javascript vs C
+        and assembly this isn't terrible, but apart from this test, there's no good reason to use it on the server)
+    </li>
+    <li>pbkdf2 > hmac > sha256
+        <ul id="sha256_tests"></ul>
+    </li>
+    <li>pbkdf2 > hmac > sha1
+        <ul id="sha1_tests"></ul>
+    </li>
+</ul>
+</body>
+</html>
